@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityTampil"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Nim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/tampilnim"
+            tools:ignore="ObsoleteLayoutParam,UnknownId" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:textSize="20dp"
+            android:id="@+id/tampilnim"
+            android:layout_height="48dp"
+            android:text="Nim = "
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Nama"
+            android:layout_toRightOf="@+id/tampilnama"
+            android:layout_below="@+id/Nim"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="150dp"
+            android:textSize="20dp"
+            android:layout_below="@+id/Nim"
+            android:id="@+id/tampilnama"
+            android:layout_height="48dp"
+            android:text="Nim = " />
+
+        <TextView
+            android:id="@+id/Nilai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Nama"
+            android:layout_toRightOf="@+id/tampilnilai"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:textSize="20dp"
+            android:id="@+id/tampilnilai"
+            android:layout_below="@id/Nama"
+            android:layout_height="48dp"
+            android:text="Nilai = " />
+
+        <TextView
+            android:id="@+id/Keterangan"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Nilai"
+            android:layout_toRightOf="@+id/tampilnilai"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tampilketerangan"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/Nilai"
+            android:text="Keterangan = "
+            android:textSize="20dp" />
+
+</RelativeLayout>
